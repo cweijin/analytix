@@ -15,10 +15,20 @@
   <body>
     <h1>DatEX - Your Data Explorer</h1>
 
-    <div class="upload">
+    <div class="upload_section">
       <h2>Upload File(s)</h2>
-      <input type="file" id="selectedFile" accept=".csv, .xls, xlsx" />
-      <button id="uploadButton">Upload</button>
+      <input
+        type="file"
+        id="file_input"
+        accept=".csv, .xls, .xlsx"
+        style="display: none"
+        multiple
+      />
+      <div id="drop_zone">
+        <p>Drag one or more files to this <i>drop zone</i>.</p>
+      </div>
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

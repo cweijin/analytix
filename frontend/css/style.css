@@ -7,3 +7,31 @@ body {
   padding: 20px;
   text-align: center;
 }
+
+.upload_section {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+#drop_zone {
+  width: 95%;
+  height: 150px;
+  background-color: beige;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; /* Centers horizontally */
+  border-radius: 12px;
+  border: 2px dashed #ccc;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Change color on drag over */
+#drop_zone.dragover {
+  background-color: #d1f7c4;
+  border-color: #34a853;
+}
