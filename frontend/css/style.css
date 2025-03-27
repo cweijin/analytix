@@ -35,3 +35,50 @@ body {
   background-color: #d1f7c4;
   border-color: #34a853;
 }
+
+/* File List */
+.file_list {
+  margin: 20px auto;
+  width: 80%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  justify-content: center;
+}
+
+/* Each file item (box) */
+.file_item {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 150px;
+  word-wrap: break-word;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.file_item span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: x-small;
+  white-space: nowrap;
+  max-width: 80%;
+}
+
+.delete_btn {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.delete_btn:hover {
+  background-color: #ff1a1a;
+}
