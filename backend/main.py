@@ -25,7 +25,7 @@ dataframes = {} # Store Data in Memory
 prompt_history = [] # Store prompt history
 
 # Initialize OpenAI LLM
-llm = OpenAI(api_token="") # Insert key before use
+llm = OpenAI(api_token="replace with key") # Insert key before use
 
 # Upload Files
 @app.post("/upload")
