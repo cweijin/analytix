@@ -8,7 +8,9 @@ body {
   text-align: center;
 }
 
-.upload_section {
+.upload_section,
+.display_section,
+.prompt_section {
   background: white;
   padding: 20px;
   margin: 20px auto;
@@ -19,7 +21,7 @@ body {
 
 #drop_zone {
   width: 95%;
-  height: 150px;
+  height: 100px;
   background-color: beige;
   display: flex;
   align-items: center;
@@ -47,7 +49,7 @@ body {
   justify-content: center;
 }
 
-/* Each file item (box) */
+/* Each file item */
 .file_item {
   background-color: #ffffff;
   padding: 15px;
@@ -69,7 +71,7 @@ body {
   max-width: 80%;
 }
 
-.delete_btn {
+.delete_button {
   background-color: #ff4d4d;
   border: none;
   color: white;
@@ -79,6 +81,89 @@ body {
   transition: background-color 0.2s ease;
 }
 
-.delete_btn:hover {
+.delete_button:hover {
   background-color: #ff1a1a;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Table */
+#table_container {
+  padding: 10px 20px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px; /* Smaller font size */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+th,
+td {
+  padding: 8px; /* Slightly smaller padding */
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Textarea Box */
+#prompt_input {
+  width: 90%;
+  height: 80px;
+  padding: 15px;
+  resize: none;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow-y: auto;
+  overflow-wrap: break-word;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+  line-height: 1.5;
+}
+
+/* Answer display area */
+#answer_display {
+  font-size: small;
+  text-overflow: clip;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  padding: 10px;
+  justify-content: center;
+}
+
+/* Prompt history list */
+li {
+  list-style: none;
+}
+
+.history_item {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 5px;
+  width: auto;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  color: black;
+  font-size: small;
+  display: inline-block;
+}
+
+.history_item:hover {
+  background-color: transparent;
 }

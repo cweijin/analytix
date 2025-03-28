@@ -1,1 +1,4 @@
 venv/
+backend/__pycache__/
+backend/exports/
+backend/pandasai.log
